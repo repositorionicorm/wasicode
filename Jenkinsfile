@@ -3,6 +3,7 @@ pipeline{
 
     tools {
         maven 'Maven3.9.1' 
+        docker 'MiDocker'
     }
 
     stages {
