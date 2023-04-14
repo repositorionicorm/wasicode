@@ -9,7 +9,7 @@ pipeline{
         stage('install') {
             steps {
                 git branch: 'main', url: 'https://github.com/repositorionicorm/wasicode.git'
-                sh "mvn install"
+                sh 'docker compose up -d'
             }
         }
     }
