@@ -1,0 +1,16 @@
+version: '2.17'
+services:
+  javadocker17:
+    image: javadocker:v1.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - JAR_FILE=target/wasicode-0.0.1-SNAPSHOT.jar
+    ports:
+      - 8081:8080
+    volumes:
+      - ./tmp:/tmp
+    container_name: javadocker17
+volumes:
+  tmp: 
