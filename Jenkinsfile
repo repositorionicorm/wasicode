@@ -5,6 +5,9 @@ pipeline{
         stage('install') {
             steps {
                 git branch: 'main', url: 'https://github.com/repositorionicorm/wasicode.git'
+                withMaven {
+                    sh "mvn install"
+                }
             }
         }
     }
