@@ -10,8 +10,8 @@ pipeline{
             steps {
                 git branch: 'main', url: 'https://github.com/repositorionicorm/wasicode.git'
                 //sh 'docker compose up -d'
-                echo $PWD
-                echo $PATH
+                sh 'pwd'
+                
             }
         }
     }
