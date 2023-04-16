@@ -10,6 +10,7 @@ pipeline{
             steps {
                 git branch: 'main', url: 'https://github.com/repositorionicorm/wasicode.git'
                 sh 'pwd'
+                sh 'cat docker-compose.yml'
                 sh 'docker compose down'
                 sh 'docker compose up -d --build'
                 sh 'pwd'
