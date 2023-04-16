@@ -8,7 +8,7 @@ pipeline{
     stages {
         stage('install') {
             steps {
-                git branch: 'main', url: 'https://github.com/repositorionicorm/wasicode.git'
+                git branch: 'desarrollo', url: 'https://github.com/repositorionicorm/wasicode.git'
                 sh 'pwd'
                 sh 'cat docker-compose.yml'
                 sh 'docker compose down'
