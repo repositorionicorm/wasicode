@@ -10,13 +10,13 @@ pipeline{
         stage('install') {
             steps {
                 sh 'mvn --version'
-                git branch: 'desarrollo', url: 'https://github.com/repositorionicorm/wasicode.git'
+               /* git branch: 'desarrollo', url: 'https://github.com/repositorionicorm/wasicode.git'
                 sh 'mvn install'
                 sh 'pwd'
                 sh 'cat docker-compose.yml'
                 sh 'docker compose down'
                 sh 'docker compose up -d --build'
-                sh 'pwd'
+                sh 'pwd'*/
                 
             }
         }
