@@ -9,6 +9,7 @@ pipeline{
     stages {
         stage('install') {
             steps {
+                sh 'mvn --version'
                 git branch: 'desarrollo', url: 'https://github.com/repositorionicorm/wasicode.git'
                 sh 'mvn install'
                 sh 'pwd'
