@@ -11,9 +11,9 @@ pipeline{
             steps {
                 sh 'mvn --version'
                 git branch: 'desarrollo', url: 'https://github.com/repositorionicorm/wasicode.git'
-                sh 'mvn clean'
-                sh 'mvn compile'
-                sh 'mvn package'
+                sh 'mvn clean package'
+               // sh 'mvn compile'
+                //sh 'mvn package'
                 //sh 'mvn install'
                 sh 'pwd'
                 sh 'cat docker-compose.yml'
