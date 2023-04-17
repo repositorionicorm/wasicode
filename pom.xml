@@ -44,12 +44,10 @@
             <configuration>
                 <release>11</release>
 				<archive>
-					<manifest>
-						<addClasspath>true</addClasspath>
-						<classpathPrefix>lib/</classpathPrefix>
-						<mainClass>com.wasicode02.wasicode.WasicodeApplication</mainClass>
-					</manifest>
-				</archive>
+                    <manifest>
+                        <mainClass>com.wasicode02.wasicode.WasicodeApplication</mainClass>
+                    </manifest>
+                </archive>				
             </configuration>
         </plugin>
     </plugins>
